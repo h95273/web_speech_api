@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>私は話せます</title>
+<script>
+function OnButtonClick() {
+let uttearnce = new SpeechSynthesisUtterance();
+//uttearnce.text = '私は、日本語が話せます';
+uttearnce.text = 'Hello World';
+uttearnce.lang = 'ja-JP'
+//uttearnce.lang = 'en-US'
+window.speechSynthesis.speak(uttearnce);
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="しゃべらせる" onclick="OnButtonClick();" />
+</body>
+
+</html>
